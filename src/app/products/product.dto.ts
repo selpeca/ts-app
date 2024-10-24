@@ -8,3 +8,5 @@ export interface CreateProductDto extends Omit<Product, 'id'|'createdAt'|'update
 
 // Nuevo tipo seleccionando campos
 type example = Pick<Product, 'color'|'description'>
+
+export interface UpdateProductDto extends Partial<CreateProductDto>{}
