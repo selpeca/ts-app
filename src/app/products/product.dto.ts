@@ -10,3 +10,5 @@ export interface CreateProductDto extends Omit<Product, 'id'|'createdAt'|'update
 type example = Pick<Product, 'color'|'description'>
 
 export interface UpdateProductDto extends Partial<CreateProductDto>{}
+export interface FindProductDto extends Partial<Product>{}
+type example2 = Readonly<Product>
